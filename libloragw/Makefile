@@ -42,6 +42,10 @@ clean:
 	rm -f obj/*.o
 	rm -f inc/config.h
 
+install:
+	mkdir -p /usr/lib/lora_gateway/ && cp -f libloragw.a /usr/lib/lora_gateway/
+	mkdir -p /usr/include/lora_gateway/ && cp -rf inc/. /usr/include/lora_gateway/
+
 ### transpose library.cfg into a C header file : config.h
 
 inc/config.h: ../VERSION library.cfg
