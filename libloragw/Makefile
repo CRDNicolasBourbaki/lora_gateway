@@ -60,6 +60,8 @@ inc/config.h: ../VERSION library.cfg
   # SPI interface
 	@echo "SPI interface     : $(CFG_SPI_MSG)"
 	@echo "	#define $(CFG_SPI_OPT)	1" >> $@
+	@echo "SPI device path   : $(SPI_DEV_PATH)"
+	@echo " #define SPI_DEV_PATH    "\"$(SPI_DEV_PATH)\""" >> $@ 
   # Debug options
 	@echo "	#define DEBUG_AUX	$(DEBUG_AUX)" >> $@
 	@echo "	#define DEBUG_SPI	$(DEBUG_SPI)" >> $@
