@@ -1,5 +1,7 @@
 ### Environment constants 
 
+LIB_PATH ?=/usr/lib
+INC_PATH ?=/usr/include
 ARCH ?=
 CROSS_COMPILE ?=
 export
